@@ -1,0 +1,56 @@
+{
+  "appName": "Huazhuhui",
+  "appPackage": "com.htinns",
+  "appActivity": "com.huazhu.main.RnMainActivity",
+  "steps": [
+    {
+      "description": "点击'查询'按钮",
+      "action": "click",
+      "locatorType": "XPATH",
+      "locatorValue": "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[5]/android.view.ViewGroup/android.view.ViewGroup[10]",
+      "timeout": 20,
+      "mandatory": true
+    },
+    {
+      "description": "点击'第一个酒店'按钮",
+      "action": "click",
+      "locatorType": "ANDROID_UIAUTOMATOR",
+      "locatorValue": "new UiSelector().className(\"android.view.ViewGroup\").instance(67)",
+      "timeout": 20,
+      "mandatory": true
+    },
+    {
+      "description": "点击'订'按钮",
+      "action": "click",
+      "locatorType": "ANDROID_UIAUTOMATOR",
+      "locatorValue": "new UiSelector().className(\"android.view.ViewGroup\").instance(129)",
+
+      "timeout": 20,
+      "mandatory": true
+    },
+    {
+      "description": "选择'入住人'按钮",
+      "action": "click",
+      "locatorType": "ANDROID_UIAUTOMATOR",
+      "locatorValue": "new UiSelector().className(\"com.horcrux.svg.PathView\").instance(6)",
+      "timeout": 20,
+      "mandatory": true
+    },
+    {
+      "description": "选择'第一位入住人'",
+      "action": "click",
+      "locatorType": "ANDROID_UIAUTOMATOR",
+      "locatorValue": "new UiSelector().className(\"com.horcrux.svg.PathView\").instance(17)",
+      "timeout": 20,
+      "mandatory": true
+    },
+    {
+      "description": "选择'提交订单'按钮",
+      "action": "click",
+      "locatorType": "ANDROID_UIAUTOMATOR",
+      "locatorValue": "new UiSelector().text(\"提交订单\")",
+      "timeout": 20,
+      "mandatory": true
+    }
+  ]
+}
